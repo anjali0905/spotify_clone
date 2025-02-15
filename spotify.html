@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+    <div class="navbar">
+        <div class="navimg">
+            <div class="img"></div>
+        </div>
+        <div class="navicon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="searchbar">
+            <div class="searchicon"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p class="search">What do you want to play?</p>
+            </div>
+        </div>
+        <div class="navopt">
+            <button ><p>Premium</p></button>
+            <button><p>Support</p></button>
+            <button><p>Download</p></button>
+            <div class="dlicon">
+            <i class="fa-solid fa-download"></i><p>Install App</p></div>
+            <button><p>Sign up</p></button>
+            <div class="login"><p>Log in</p></div>
+        </div>
+    </div>
+    
+    <div class="container">
+     
+        <div class="songlist">
+            <h1>Popular Songs</h1>
+            <div class="songitemcontainer"><div class="songitem">
+                <img src="0x1900-000000-80-0-0 (1).jpg" alt="1">
+                <span>Zara Zara</span>
+                <span class="songlistplay"><span class="timespan">05:33<i id="0" class=" songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>  
+            <div class="songitem">
+                <img src="Hits-Of-Sunidhi-Chauhan-Hindi-2020-20200817144001-500x500.jpg" alt="1">
+                <span>Aankh</span>
+                <span class="songlistplay"><span class="timespan">05:33<i id="1"class=" songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="shreya.jpg" alt="1">
+                <span>Ami Je Tomar</span>
+                <span class="songlistplay"><span class="timespan">05:33<i id="2" class=" songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="The-Arijit-Singh-Collection-Hindi-2023-20230526154904-500x500.jpg" alt="1">
+                <span>Tum Hi Ho</span>
+                <span class="songlistplay"><span class="timespan">05:33<i id="3" class=" songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="The-Arijit-Singh-Collection-Hindi-2023-20230526154904-500x500.jpg" alt="1">
+                <span>Agar Tum Saath Ho</span>
+                <span class="songlistplay"><span class="timespan">05:33<i id="4" class=" songItemPlay fa-solid fa-play-circle"></i></span></span>
+            </div>
+            
+            
+            
+            
+
+
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar"min="0" value="0"max="100">
+        <div class="icon"><i class="fa-2x fa-solid fa-backward" id="previous"></i>
+            <i class="fa-2x fa-solid fa-play-circle "id="masterPlay" ></i>
+            <i class="fa-2x fa-solid fa-forward" id="next"></i> </div>
+            <div class="songinfo">
+               <img src="playing.gif" width="60px" alt="" id="gif"><span id="masterSongName" Zara Zara></span>
+            </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+</html>
